@@ -1,0 +1,203 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
+
+--ligth: #fff;
+--green: aqua;
+--text: #1A1A40;
+--dark: #141E27;
+
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 0.95rem;
+    font-family: 'Montserrat', sans-serif !important;
+    color: var(--text);
+
+}
+
+@media(min-width: 320px){
+    .container{ 
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .container .btn{
+        width: 90%;
+        max-width: 500px;
+        margin: 3rem 0 2rem 0;
+    }
+    header{
+        width: 90%;
+        padding: 1rem 0 1rem 0;
+        display: flex;
+        align-items: center;
+        flex-direction:column ; 
+    }
+    header .header-item{
+        width: 100%;
+        max-width: 1080px;
+        min-height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    header .header-item span{
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+    header .header-item .btn{
+        width: 200px;
+    }
+    
+
+    main{
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+
+    }
+    
+    main .first, 
+    main .middle, main .final{
+        width: 90%;
+        max-width: 1080px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 3rem;
+    }
+
+    article, 
+    .side-half{
+        width: 100%;
+        max-width: 500px;
+        margin-bottom: 1rem;
+    }
+
+    article .btn{
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .img-fluid{
+        width: 100%;
+    }
+
+    article .line {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin-bottom:  3rem;
+    }
+    article .line .pet {
+        width: clamp(40px, 10vw, 100px)
+    }
+
+    article .abaut{
+        width: 100%;
+        margin-left: 2rem;
+    }
+
+    main .final .item-abaut{
+        width: 100%;
+        max-width: 300px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer{
+        width: 100%;
+        padding: 2rem 0 2rem 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        font-size: 20px;
+        margin-top: 2rem;
+        color: var(--ligth);
+        background: var(--dark);
+        }
+    footer .inner-footer{
+        width: 90%;
+        max-width: 1080px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    footer h6{
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+.btn{
+    height:40px ;
+    border: none;
+    border-radius: 0.3rem;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--ligth);
+    background: var(--green);
+    cursor: pointer;
+    transition: all .03s;
+}
+
+.btn:hover{
+    color: var(--green);
+    background: var(--dark);
+
+}
+
+h2 {
+    font-size: clamp(1.4rem, 10vw, 2.2rem);
+    margin-bottom: 2.5rem;
+    transition: all .3s;
+}
+h2:hover{
+    color: var(--green);
+}
+h2 span{
+    color: var(--green);
+}
+h3 {
+    font-size: clamp(1.1rem 10wh 1.5rem);
+    
+
+}
+h4{
+    margin-top: 1rem 0 1rem 0;
+    font-size: 1.2rem
+
+}
+p{
+    margin: 1rem 0 1rem 0;
+    font-size: clamp(0.8rem, 10vw, .95rem );
+}
+
+.text-center{
+    width: 90%;
+    max-width: 700px;
+    text-align: center;
+}
